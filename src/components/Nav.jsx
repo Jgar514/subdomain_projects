@@ -15,7 +15,7 @@ const Nav = (props) => {
 			<div className="flex justify-between ">
 				{/* <img src={logo1} alt="logo" className="w-[28px] h-[28px] object-fill " /> */}
 
-				<h1 className="bg text-xl dark:text-white text-black p-5">Joshua Garvey</h1>
+				<h1 className="bg text-2xl dark:font-normal  dark:text-white text-black p-5">Joshua Garvey</h1>
 
 				<img src={toggle ? close : menu} alt="menu" className="w-[28px] h-full bg- black dark:bg-transparent object-contain cursor-pointer  z-50 mr-6 my-auto pt-" onClick={() => setToggle(!toggle)} />
 

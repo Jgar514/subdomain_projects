@@ -9,17 +9,18 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import { BsArrowDownRight } from "react-icons/bs";
+
 const ProjectCard = ({ index, name, preview, description, tags, image, source_code_link, show_project_link, url, title, b1 }) => {
 	return (
 		<div className=" mt-5 mb-0 ">
-			<div className="flex flex-col gap-2 w-full sm:w-[360px]   border-b-2 border-t-2 dark:border-red-700 border-black  rounded-xl border-dashed dark:bg-gray-700 bg-gray-200 pb-2 pt-0 shadow-lg dark:shadow-[#f7f7f7]  ">
-				<h1 className="text-[26px] px-4 py-2 w-fit text-black bg-gray-100 bg-opacity-80 rounded-lg border-2 border-black">{title}</h1>
+			<div className="flex flex-col gap-2 w-full sm:w-[360px]   border-b-2 border-t-2 dark:border-red-700 border-black  rounded-xl  dark:bg-gray-700 bg-gray-200 pb-2 pt-0 shadow-lg dark:shadow-[#f7f7f7]  ">
+				<h1 className="text-[26px] px-4 py-2 w-fit text-black bg-gray-50 bg-opacity-80 rounded-lg border-2 border-black">{title}</h1>
 				<div className="w-full relative pt-2 bg-gray-800 pb-2 ">
 					<img src={image} alt={name} className="border-2 border-black" />
 					<div className="h-1/6 absolute flex w-full bottom-2  justify-end">
 						<div className="w-fit h-full absolute flex  items-center  rounded justify-end bottom-0 bg-gray-950 gap-4 opacity-80 px-4">
 							<span className="text-white  text-lg text-bold   ">{url}</span>
-							<span className="text-white  text-lg text-bold   ">3d </span>
 						</div>
 					</div>
 				</div>

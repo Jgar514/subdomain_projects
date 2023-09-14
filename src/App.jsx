@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { Contact, Hero, Navbar, Works, StarsCanvas } from "./components";
-import Nav from "./components/Nav";
+import { Contact, Hero, Nav, Works, StarsCanvas } from "./components";
 
 const App = () => {
 	const [theme, setTheme] = useState(null);

@@ -20,11 +20,11 @@ const Nav = (props) => {
 				<img src={toggle ? close : menu} alt="menu" className="w-[28px] h-full bg- black dark:bg-transparent object-contain cursor-pointer  z-50 mr-6 my-auto pt-" onClick={() => setToggle(!toggle)} />
 
 				<div className={`${!toggle ? "hidden" : "flex"} p-0 black-gradient w-screen h-[645px] absolute z-40  right-0 mx-0 my-0 min-w-[140px] dark:border-yellow-400 border-blue-600 border-2  rounded-xl overscroll-none lg:w-1/2`}>
-					<div className="flex flex-row w-full bg-gray-300 dark:bg-transparent">
+					<div className="flex flex-row w-full bg-gray-300 dark:bg-transparent text-black dark:text-gray-300">
 						<div className=" w-1/4 flex items-center">
-							<div className="h-3/4  w-full  justify-center">
+							<div className="h-3/4  w-full  justify-center ">
 								{" "}
-								<div className="text-6xl w-full flex flex-col justify-center items-center gap-8 bg-gray-400 h-full px-4 py-auto rounded-r-2xl ">
+								<div className="text-6xl w-full flex flex-col justify-center items-center gap-8 bg-gray-400 h-full px-4 py-auto rounded-r-2xl text-black border-black border-2  ">
 									<button role="link" onClick={() => openInNewTab("https://github.com/Jgar514")}>
 										<AiFillGithub />
 									</button>

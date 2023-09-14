@@ -35,7 +35,7 @@ const Room = () => {
 
 const MyLife = () => {
 	return (
-		<div className=" h-[300px] mt-0 md:h-[70%] lg:h-[500px] lg:w-full lg:border-r-0  rounded border-b border-t-0 lg:border-0 lg:border-t-2 border-2  dark:border-white border-black border-double px-0 pt-2 pb-4  md:border-4 ">
+		<div className=" h-[300px] mt-0 md:h-[70%] lg:h-[500px] lg:w-full lg:border-r-0  rounded border-b border-t-0 lg:border-0 lg:border-t-2 border-2 dark:border-r-0 dark:border-l-0  dark:border-white border-black border-double px-0 pt-2 pb-4  md:border-4 ">
 			<Canvas frameLoop="demand" shadows camera={{ position: [0, 24, 28], fov: 50 }} gL={{ preserveDrawingBuffer: true }}>
 				<Suspense fallback={<CanvasLoader />}>
 					<OrbitControls enableZoom={false} enableDamping={true} />

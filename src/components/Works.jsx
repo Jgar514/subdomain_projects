@@ -94,7 +94,7 @@ const ProjectCard = ({ index, name, preview, description, tags, image, source_co
 const Works = () => {
 	return (
 		<>
-			<div className="h-full w-full  flex flex-wrap py-20 mt-6">
+			<div id="works" className="h-full w-full  flex flex-wrap py-20 mt-6">
 				{/* <div className="w-full flex">
 				<motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
 					idk

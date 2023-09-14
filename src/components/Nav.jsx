@@ -11,7 +11,7 @@ const Nav = (props) => {
 	const [toggle, setToggle] = useState(false);
 
 	return (
-		<nav className="sticky top-0    drop-shadow shadow-blue-600 bg-gray-300 z-30 border-b-2 dark:bg-[#121212] border-black dark:border-white">
+		<nav className="sticky top-0    drop-shadow shadow-blue-600 bg-gray-300 z-30 border-b-2 dark:bg-[#121212] border-black dark:border-white ">
 			<div className="flex justify-between ">
 				{/* <img src={logo1} alt="logo" className="w-[28px] h-[28px] object-fill " /> */}
 
@@ -20,7 +20,7 @@ const Nav = (props) => {
 				<img src={toggle ? close : menu} alt="menu" className="w-[28px] h-full bg- black dark:bg-transparent object-contain cursor-pointer  z-50 mr-6 my-auto pt-" onClick={() => setToggle(!toggle)} />
 
 				<div className={`${!toggle ? "hidden" : "flex"} p-0 black-gradient w-screen h-[645px] absolute z-40  right-0 mx-0 my-0 min-w-[140px] dark:border-yellow-400 border-blue-600 border-2  rounded-xl overscroll-none lg:w-1/2`}>
-					<div className="flex flex-row w-full">
+					<div className="flex flex-row w-full bg-gray-300 dark:bg-transparent">
 						<div className=" w-1/4 flex items-center">
 							<div className="h-3/4  w-full  justify-center">
 								{" "}
@@ -45,7 +45,7 @@ const Nav = (props) => {
 								{navLinks.map((Link) => (
 									<li
 										key={Link.id}
-										className={`${active === Link.title ? "text-white" : "text-red"} font-poppins font-medium cursor-pointer text-[26px]`}
+										className={`${active === Link.title ? "text-white " : "text-red"} font-poppins font-medium cursor-pointer text-[26px]`}
 										onClick={() => {
 											setToggle(!toggle);
 											setActive(Link.title);

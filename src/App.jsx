@@ -40,7 +40,7 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<div className="bg-white-100 dark:bg-black text-content ">
+			<div className="bg-white-100 dark:bg-black text-content " id="home">
 				<button type="button" onClick={handleThemeSwitch} className="fixed  right-20 top-5 bg-blue-600 dark:bg-yellow-400 text-lg p-1 rounded-md z-50">
 					{theme === "dark" ? sun : moon}
 				</button>

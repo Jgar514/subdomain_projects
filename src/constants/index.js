@@ -7,11 +7,11 @@ import { popup } from "../assets";
 
 export const navLinks = [
 	{
-		id: "",
+		id: "home",
 		title: "Home",
 	},
 	{
-		id: "",
+		id: "works",
 		title: "My Work",
 	},
 	// {
